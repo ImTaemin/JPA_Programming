@@ -1,0 +1,3 @@
+# 1장 JPA 소개
+- [1-1.JPA 소개](1-1.JPA%EC%86%8C%EA%B0%9C.md)
+- [1-2.패러다임의 불일치](1-2.%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84%EC%9D%98%20%EB%B6%88%EC%9D%BC%EC%B9%98.md)
