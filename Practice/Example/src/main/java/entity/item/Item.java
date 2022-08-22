@@ -1,13 +1,15 @@
-package entity;
+package entity.item;
 
-import lombok.Data;
+import entity.Category;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Item
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "DTYPE")
+public abstract class Item
 {
     @Id
     @GeneratedValue
@@ -59,5 +61,15 @@ public class Item
     public void setStockQuantity(int stockQuantity)
     {
         this.stockQuantity = stockQuantity;
+    }
+
+    public List<Category> getCategories()
+    {
+        return categories;
+    }
+
+    public void setCategories(List<Category> categories)
+    {
+        this.categories = categories;
     }
 }
