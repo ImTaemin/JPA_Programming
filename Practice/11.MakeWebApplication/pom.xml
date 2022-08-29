@@ -114,6 +114,14 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!--롬복-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+        </dependency>
+
+        <!--테스트-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -131,15 +139,6 @@
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat-maven-plugin</artifactId>
-                <version>2.2</version>
-                <configuration>
-                    <path>/</path>
-                    <uriEncoding>UTF-8</uriEncoding>
                 </configuration>
             </plugin>
         </plugins>
