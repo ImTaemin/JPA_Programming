@@ -12,7 +12,7 @@
 
     <tx:annotation-driven/>
 
-    <context:component-scan base-package="org.tmkim.jpashop.service, org.tmkim.jpashop.repository" />
+    <context:component-scan base-package="org.tmkim.jpashop.service, org.tmkim.jpashop.repository, org.tmkim.jpashop.web" />
 
     <bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource">
         <property name="driverClassName" value="org.h2.Driver"/>

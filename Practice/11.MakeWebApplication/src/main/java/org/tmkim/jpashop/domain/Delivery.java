@@ -2,7 +2,6 @@ package org.tmkim.jpashop.domain;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.tmkim.jpashop.domain.Order;
 import org.tmkim.jpashop.domain.item.Item;
 
 import javax.persistence.*;
@@ -21,4 +20,10 @@ public class Delivery extends Item
 
     @Enumerated(EnumType.STRING)
     private DeliveryStatus status; //ENUM [READY(준비), COMP(배송)]
+
+    public Delivery(Address address)
+    {
+
+    }
 }
+
