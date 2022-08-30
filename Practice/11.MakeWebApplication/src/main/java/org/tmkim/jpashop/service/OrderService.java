@@ -28,7 +28,7 @@ public class OrderService
     public Long order(Long memberId, Long itemId, int count) throws NotEnoughStockException
     {
         //엔티티 조회
-        Member member = memberRepository.findOne(memberId);
+        Member member = memberRepository.getReferenceById(memberId);
         Item item = itemService.findOne(itemId);
 
         //배송정보 생성
@@ -47,7 +47,7 @@ public class OrderService
     public void cancelOrder(Long orderId)
     {
         //주문 엔티티 조회
-        Order order = orderRepository.findOne(orderId);
+        Order order = orderRepository.getReferenceById(orderId);
         //주문 취소
         order.cancel();
     }
